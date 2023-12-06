@@ -34,7 +34,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 		verticalAlignment = Alignment.CenterVertically
 	) {
 		Text(
-			"100 Steps"
+			"100 Steps and 100 more"
 		)
 	}
 }
