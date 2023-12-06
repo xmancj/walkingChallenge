@@ -15,34 +15,34 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.walkingchallenge.ui.theme.WalkingChallengeTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            WalkingChallengeTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
-            }
-        }
-    }
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContent {
+			WalkingChallengeTheme {
+				// A surface container using the 'background' color from the theme
+				Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+					Greeting("Android")
+				}
+			}
+		}
+	}
 }
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Row(
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        Text(
-            "100 Steps"
-        )
-    }
+	Row(
+		verticalAlignment = Alignment.CenterVertically
+	) {
+		Text(
+			"100 Steps"
+		)
+	}
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    WalkingChallengeTheme {
-        Greeting("Android")
-    }
+	WalkingChallengeTheme {
+		Greeting("Android")
+	}
 }
